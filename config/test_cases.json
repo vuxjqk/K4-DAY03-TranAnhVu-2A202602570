@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TC01",
+    "type": "direct_query",
+    "question": "Wi-Fi trên máy tính không kết nối được thì tôi nên kiểm tra những gì trước?",
+    "expected_behavior": "Chatbot trả lời trực tiếp dựa trên kiến thức chung về xử lý sự cố Wi-Fi, không cần gọi bất kỳ Tool nào.",
+    "complexity": "Low"
+  },
+  {
+    "id": "TC02",
+    "type": "single_tool_query",
+    "question": "Hãy tra cứu thông tin ticket IT-100001 của tôi.",
+    "expected_behavior": "Agent nhận diện nhu cầu tra cứu ticket và tự động phát sinh Tool Call 'get_ticket' với mã ticket IT-100001, sau đó sử dụng kết quả Tool để trả lời người dùng.",
+    "complexity": "Medium"
+  },
+  {
+    "id": "TC03",
+    "type": "appointment_booking",
+    "question": "Tôi đang gặp sự cố không thể kết nối Wi-Fi tại văn phòng. Hãy tạo một yêu cầu hỗ trợ kỹ thuật cho tôi với mức độ ưu tiên cao.",
+    "expected_behavior": "Agent tự động phát sinh Tool Call 'schedule_appointment' với đúng thời gian và thông tin sinh viên.",
+    "complexity": "Medium"
+  },
+  {
+    "id": "TC04",
+    "type": "multi_step_reasoning",
+    "question": "Hãy kiểm tra xem tôi đã có ticket nào liên quan đến sự cố không kết nối được Wi-Fi chưa. Nếu chưa có ticket đang xử lý, hãy tạo một yêu cầu hỗ trợ mới với mức độ ưu tiên cao.",
+    "expected_behavior": "Agent thực hiện chuỗi suy luận ReAct: Tra cứu cố vấn học tập của sinh viên trước, sau đó tiến hành đặt lịch hẹn.",
+    "complexity": "High"
+  },
+  {
+    "id": "TC05",
+    "type": "edge_case_handling",
+    "question": "Hãy tra cứu thông tin ticket IT-999999 của tôi.",
+    "expected_behavior": "Agent nhận kết quả NOT_FOUND từ Tool và đưa ra phản hồi lịch sự, chính xác không bịa đặt dữ liệu.",
+    "complexity": "Medium"
+  }
+]

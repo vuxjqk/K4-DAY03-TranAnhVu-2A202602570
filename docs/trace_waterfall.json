@@ -1,29 +1,42 @@
 [
   {
     "step": 1,
-    "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
+    "query": "Wi-Fi trên máy tính không kết nối được thì tôi nên kiểm tra những gì trước?",
     "action_type": "FINAL_ANSWER",
-    "thought": "Câu hỏi chung về quy chế học vụ, trả lời trực tiếp không cần gọi Tool.",
-    "output": "[Mock Agent Response]: Xin chào! Quy chế học vụ VinUni yêu cầu sinh viên tích lũy tối thiểu 120 tín chỉ và duy trì GPA trên 2.0 để tốt nghiệp.",
-    "latency_ms": 2845.93
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Khi máy tính không kết nối được Wi-Fi, bạn nên thực hiện các bước kiểm tra cơ bản sau đây trước khi gửi yêu cầu hỗ trợ kỹ thuật:\n\n1. **Kiểm tra công tắc Wi-Fi & Chế độ máy bay (Airplane Mode):**\n   * Đảm bảo tính năng Wi-Fi trên máy tính đang được bật.\n   * Kiểm tra xem máy tính có đang bật **Airplane Mode** (Chế độ máy bay) hay không và hãy tắt nó đi.\n\n2. **Kiểm tra kết nối trên các thiết bị khác:**\n   * Dùng điện thoại hoặc máy tính khác thử kết nối vào cùng mạng Wi-Fi đó.\n   * *Nếu thiết bị khác cũng không vào được:* Sự cố có thể xuất phát từ Router/Modem hoặc đường truyền mạng chung.\n   * *Nếu thiết bị khác vẫn vào được:* Sự cố nằm ở máy tính của bạn.\n\n3. **Quên mạng (Forget Network) và kết nối lại:**\n   * Vào phần cài đặt Wi-Fi trên máy tính, chọn mạng Wi-Fi đang gặp lỗi -> chọn **Forget** (Quên mạng).\n   * Sau đó chọn lại mạng Wi-Fi và nhập lại mật khẩu.\n\n4. **Khởi động lại máy tính & Modem/Router:**\n   * **Khởi động lại máy tính:** Giúp xóa các bộ nhớ tạm và làm mới lại các dịch vụ mạng.\n   * **Khởi động lại Router/Modem Wi-Fi** (nếu bạn đang ở nhà hoặc có quyền truy cập thiết bị): Tắt nguồn, đợi khoảng 10–15 giây rồi bật lại.\n\n5. **Sử dụng công cụ chẩn đoán sự cố mạng tự động:**\n   * **Windows:** Nhấp chuột phải vào biểu tượng mạng ở góc dưới bên phải màn hình -> chọn **Diagnose network problems** (hoặc *Troubleshoot problems*).\n   * **macOS:** Giữ phím `Option` và nhấp vào biểu tượng Wi-Fi trên thanh menu -> chọn **Open Wireless Diagnostics**.\n\n6. **Tắt và bật lại Card mạng (Network Adapter):**\n   * Trên Windows: Vào `Control Panel` > `Network and Sharing Center` > `Change adapter settings` > Nhấp chuột phải vào card Wi-Fi chọn **Disable**, chờ 5 giây rồi nhấp chuột phải chọn **Enable**.\n\n---\n Nếu đã thử các bước trên nhưng vẫn không kết nối được, bạn hãy cung cấp thêm thông tin (Tên hệ điều hành, thông báo lỗi nếu có) để IT Helpdesk hỗ trợ bạn chi tiết hơn nhé!",
+    "latency_ms": 8531.75
   },
   {
     "step": 1,
-    "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
-    "action_type": "TOOL_EXECUTION",
-    "tool_name": "academic_query",
-    "arguments": {
-      "student_id": "SV2026001"
-    },
-    "observation": {},
-    "latency_ms": 799.12
+    "query": "Hãy tra cứu thông tin ticket IT-100001 của tôi.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Hiện tại hệ thống chưa cung cấp công cụ để tra cứu thông tin ticket IT Helpdesk. Do đó, tôi không thể tra cứu trực tiếp thông tin cho mã ticket **IT-100001** của bạn. \n\nVui lòng liên hệ trực tiếp bộ phận IT Helpdesk qua email hoặc kênh hỗ trợ chính thức của trường để được trợ giúp chi tiết về ticket này.",
+    "latency_ms": 5246.38
   },
   {
-    "step": 2,
-    "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
+    "step": 1,
+    "query": "Tôi đang gặp sự cố không thể kết nối Wi-Fi tại văn phòng. Hãy tạo một yêu cầu hỗ trợ kỹ thuật cho tôi với mức độ ưu tiên cao.",
     "action_type": "FINAL_ANSWER",
-    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
-    "output": "Chưa thể trả lời chi tiết do chưa nhận được dữ liệu từ MCP Server (hãy hoàn thành TODO 2.1).",
-    "latency_ms": 10.0
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Hiện tại, hệ thống chưa hỗ trợ công cụ tạo ticket IT Helpdesk tự động trực tiếp qua cuộc trò chuyện này. Tuy nhiên, tôi xin ghi nhận yêu cầu của bạn và hướng dẫn bạn các bước xử lý cũng như kênh gửi yêu cầu hỗ trợ nhanh nhất:\n\n---\n\n### 1. Hướng dẫn kiểm tra & khắc phục sự cố Wi-Fi nhanh:\n1. **Tắt và bật lại Wi-Fi:** Tắt kết nối Wi-Fi trên thiết bị của bạn, chờ khoảng 10 giây rồi bật lại.\n2. **Quên mạng Wi-Fi (Forget Network):** Vào cài đặt Wi-Fi -> Chọn mạng Wi-Fi văn phòng -> Chọn *Forget/Quên mạng*, sau đó thử kết nối và nhập lại thông tin đăng nhập.\n3. **Kiểm tra thiết bị khác/Đồng nghiệp:** Xác định xem sự cố chỉ xảy ra trên thiết bị của bạn hay ảnh hưởng đến toàn bộ khu vực văn phòng.\n4. **Khởi động lại thiết bị:** Khởi động lại máy tính/điện thoại để xóa cache mạng tạm thời.\n\n---\n\n### 2. Gửi yêu cầu hỗ trợ tới Bộ phận IT Helpdesk:\nĐể gửi ticket hỗ trợ với **Mức độ ưu tiên: Cao**, bạn vui lòng liên hệ trực tiếp với bộ phận IT Helpdesk qua các kênh sau:\n\n- **Portal IT Helpdesk / Email IT:** Gửi email hoặc tạo yêu cầu trên Cổng thông tin IT của đơn vị.\n- **Nội dung cần cung cấp:**\n  - **Tiêu đề:** [ƯU TIÊN CAO] Sự cố không kết nối được Wi-Fi văn phòng\n  - **Vị trí/Phòng làm việc:** (Ví dụ: Tầng 3 - Phòng 302)\n  - **Tên thiết bị & Hệ điều hành:** (Ví dụ: Laptop Windows 11 / MacBook OS)\n  - **Địa chỉ MAC/IP (nếu có):**\n  - **Mô tả chi tiết:** Thiết bị không thể kết nối Wi-Fi tại văn phòng, báo lỗi cụ thể (nếu có).\n\nNếu bạn cần thêm hướng dẫn về các bước kỹ thuật trên thiết bị của mình, vui lòng cho tôi biết tên hệ điều hành bạn đang sử dụng!",
+    "latency_ms": 8851.3
+  },
+  {
+    "step": 1,
+    "query": "Hãy kiểm tra xem tôi đã có ticket nào liên quan đến sự cố không kết nối được Wi-Fi chưa. Nếu chưa có ticket đang xử lý, hãy tạo một yêu cầu hỗ trợ mới với mức độ ưu tiên cao.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Để có thể kiểm tra danh sách ticket hiện tại cũng như tạo yêu cầu hỗ trợ kỹ thuật mới cho bạn, tôi cần một số thông tin xác thực. \n\nVui lòng cung cấp cho tôi:\n1. **Mã sinh viên / Mã người dùng (Student ID / User ID)** của bạn.\n2. **Thông tin chi tiết về sự cố Wi-Fi** (ví dụ: tên mạng Wi-Fi bạn đang kết nối, thiết bị sử dụng, vị trí xảy ra lỗi,...).\n\nSau khi nhận được thông tin từ bạn, tôi sẽ tiến hành kiểm tra trên hệ thống và tạo ticket hỗ trợ với mức độ ưu tiên cao nếu chưa có ticket nào đang được xử lý.",
+    "latency_ms": 10815.83
+  },
+  {
+    "step": 1,
+    "query": "Hãy tra cứu thông tin ticket IT-999999 của tôi.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Hiện tại hệ thống không có công cụ hỗ trợ tra cứu mã ticket IT-999999 trực tiếp. Xin vui lòng kiểm tra lại mã ticket hoặc liên hệ với bộ phận IT Helpdesk qua kênh hỗ trợ chính thức để được trợ giúp chi tiết.",
+    "latency_ms": 3907.9
   }
 ]
